@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import swal from 'sweetalert';
-import $ from 'jquery';
 
 export default class NewRsvp extends Component {
     
