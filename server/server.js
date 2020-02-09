@@ -2,13 +2,13 @@ require("dotenv").config();
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const path = require("path");
+// const path = require("path");
 const PORT = process.env.PORT || 4000;
 const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./rsvpDb.js');
 const rsvpRoutes = require('./rsvpRoutes');
-const mailer = require("./mailer");
+// const mailer = require("./mailer");
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.rsvpDb, { useNewUrlParser: true }).then(

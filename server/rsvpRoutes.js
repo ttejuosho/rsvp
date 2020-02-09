@@ -16,8 +16,9 @@ rsvpRoutes.route('/').get((req,res) => {
     RSVP.find((err, rsvps) =>{
         if(err){
             console.log(err)
+            return err;
         } else {
-            res.json(rsvps);
+            return res.json(rsvps);
         }
     });
 });
@@ -25,7 +26,7 @@ rsvpRoutes.route('/').get((req,res) => {
 rsvpRoutes.route('/edit/:id').get((req,res) => {
     let id = req.params.id;
     RSVP.findById(id, (err, rsvp) => {
-        res.json(rsvp);
+        return res.json(rsvp);
     });
 });
 
@@ -37,6 +38,7 @@ rsvpRoutes.route('/data').get((req,res) => {
     RSVP.find((err, rsvps)=>{
         if (err){
             console.log(err);
+            return err;
         } else {
             for (var i = 0; i < rsvps.length; i++){
                 if (rsvps[i].Attending === "Yes"){
@@ -51,7 +53,7 @@ rsvpRoutes.route('/data').get((req,res) => {
         chartArray.push(numberOfYeses);
         chartArray.push(numberOfNos);
         chartArray.push(numberOfUndecided);
-        res.json(chartArray);
+        return res.json(chartArray);
     });
 })
 
