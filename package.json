@@ -10,7 +10,7 @@
     "dotenv": "^7.0.0",
     "ejs": "^2.6.1",
     "email-templates": "^5.0.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-validation": "^1.19.0",
     "jquery-validation-unobtrusive-bootstrap": "^2.2.0",
     "node-mailjet": "^3.3.1",
