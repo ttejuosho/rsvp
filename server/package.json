@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@amcharts/amcharts4": "^4.2.6",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
